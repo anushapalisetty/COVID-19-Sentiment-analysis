@@ -23,15 +23,21 @@ The raw data available is not suitable to process the Machine Learning algorithm
 
 ## 2. Data Visualization
 
-###NRC Lexicon Analysis
+### NRC Lexicon Analysis
 
 To understand the emotion or opinion of the text,we make use of NRC dictionary which contains a sentiment for the English words. After tokenizing and cleaning the 
 text for each word there is a corresponding sentiment attached to it like joy, fear, surprise etc. Figure 5 shows the Sentiments with respect to their counts. 
 
 
- 
+![nrc](https://user-images.githubusercontent.com/57431137/97067908-b91b9a80-1590-11eb-90b8-8a646a54c6d0.png)
 
 
-## 2. Tweet Classification:
+## 3. Tweet Classification:
 
 Once we get the polarity, we classify the tweets Positve as 1, neutral as 0 and negative as 2. We are performing MultiClassification here. Here the feature extraction is implemented using TF-IDF and proceed for modelling. Preprocessing must be implemented before modelling.
+
+### Sampling:
+After data preprocessing the next step is Data modelling. To perform data modelling we split the data using Stratified sampling instead of random sampling which take the equal data from each group of the labelled data.We split the dataset into samples of 60:40 where instead of random sampling.
+
+### Naive Bayes :
+Naive Bayes are mostly used in natural language processing (NLP) problems.They calculate the probability of each class for a given text and then output the tag with the highest one. 
